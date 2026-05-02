@@ -176,15 +176,6 @@ int main(int argc, char ** argv, char ** envp)
     typedef void (*entry_point)(int, char **);
 
     entry_point start_program = (entry_point)entry;
-
-
-    int ISHAMAN = 11231231;
-    char * str1 = "amir shamen meod";
-    char * str2 = "he weighs: ";
-    char * str3 = "ton";
-
-    __printf("amir is...\n%s\n%s\n%d %s\n", str1, str2, ISHAMAN, str3);
-
     start_program(argc, argv);
 
     return 0;
